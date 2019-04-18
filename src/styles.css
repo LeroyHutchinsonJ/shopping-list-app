@@ -1,4 +1,23 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.App-Nav {
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #508fca;
+}
+.App-Nav ul {
+  padding: 0;
+  margin: 0;
+}
+.App-Nav-Item {
+  list-style: none;
+  display: inline-block;
+  margin-right: 32px;
+  font-size: 24px;
+  border-bottom: 4px solid transparent;
+}
+.App-Content {
+  margin: 0 20px;
 }
