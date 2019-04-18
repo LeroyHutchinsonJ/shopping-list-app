@@ -1,6 +1,8 @@
 .App {
   max-width: 800px;
   margin: 0 auto;
+  position: absolute;
+  width: 800px;
 }
 .App-Nav {
   margin: 20px;
