@@ -22,6 +22,7 @@ class App extends React.Component {
   }
 
   render() {
+    //A lil Object Destructuring is good for the soul
     let { activeTab } = this.state;
 
     return (
