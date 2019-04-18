@@ -21,3 +21,12 @@
 .App-Content {
   margin: 0 20px;
 }
+.App-Nav-Item a {
+  cursor: pointer;
+}
+.App-Nav-Item a:hover {
+  color: #999;
+}
+.App-Nav-Item.selected {
+  border-bottom-color: #ffaa3f;
+}
