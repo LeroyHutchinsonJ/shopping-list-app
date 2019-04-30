@@ -25,3 +25,5 @@ Item.propTypes = {
   item: PropTypes.object.isRequired,
   onAddToCart: PropTypes.func.isRequired
 };
+
+export default Item;

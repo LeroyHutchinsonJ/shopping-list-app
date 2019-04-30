@@ -3,6 +3,7 @@ import Nav from "./nav";
 import "./styles.css";
 import ReactDOM from "react-dom";
 import { items } from "./static-data.js";
+
 import ItemPage from "./item-page";
 
 class App extends React.Component {
