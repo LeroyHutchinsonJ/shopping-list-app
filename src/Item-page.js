@@ -16,3 +16,5 @@ var ItemPage = ({ items }) => {
 ItemPage.propTypes = {
   items: PropTypes.array.isRequired
 };
+
+export default ItemPage;
