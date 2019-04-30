@@ -15,7 +15,8 @@ var ItemPage = ({ items, onAddToCart }) => {
   );
 };
 ItemPage.propTypes = {
-  items: PropTypes.array.isRequired
+  items: PropTypes.array.isRequired,
+  onAddToCart: PropTypes.func.isRequired
 };
 
 export default ItemPage;
