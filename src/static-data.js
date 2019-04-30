@@ -31,4 +31,4 @@ let items = [
   }
 ];
 
-export default items;
+export { items };
