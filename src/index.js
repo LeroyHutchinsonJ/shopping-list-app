@@ -25,7 +25,7 @@ class App extends React.Component {
       case 0:
         return <ItemPage items={items} onAddToCart={this.handleAddToCart} />;
       case 1:
-        return <span>Cart</span>;
+        return <span>{this.state.cart.length}</span>;
     }
   }
 
