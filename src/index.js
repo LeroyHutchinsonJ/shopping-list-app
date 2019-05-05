@@ -20,6 +20,7 @@ class App extends React.Component {
     this.setState({ cart: [...this.state.cart, item.id] });
   };
 
+  //Renders the cart Page
   renderCart = () => {
     let itemCounts = this.state.cart.reduce((itemCounts, itemId) => {
       itemCounts[itemId] = itemCounts[itemId] || 0;
