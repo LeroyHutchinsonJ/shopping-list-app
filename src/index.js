@@ -10,7 +10,8 @@ import CartPage from "./cart-page";
 class App extends React.Component {
   state = {
     activeTab: 0,
-    cart: []
+    cart: [],
+    price: 0
   };
 
   handleTabChange = index => {
@@ -18,6 +19,7 @@ class App extends React.Component {
   };
   handleAddToCart = item => {
     this.setState({ cart: [...this.state.cart, item.id] });
+    this.setState({ price: this.state.price + item.price });
   };
   handleRemoveFromCart = item => {
     let index = this.state.cart.indexOf(item.id);
@@ -28,6 +30,7 @@ class App extends React.Component {
         ...this.state.cart.slice(index + 1)
       ]
     });
+    this.setState({ price: this.state.price - item.price });
   };
   //Renders the cart Page
   renderCart = () => {
@@ -51,6 +54,7 @@ class App extends React.Component {
         items={cartItems}
         onAddOne={this.handleAddToCart}
         onRemoveOne={this.handleRemoveFromCart}
+        itemPrice={this.state.price}
       />
     );
   };

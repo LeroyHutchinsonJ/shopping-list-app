@@ -3,10 +3,7 @@ import "./CartPage.css";
 import PropTypes from "prop-types";
 import Item from "./item";
 
-var CartPage = ({ items, onAddOne, onRemoveOne }) => {
-  var priceAmount = items.reduce(() => {
-    return 0;
-  });
+var CartPage = ({ items, onAddOne, onRemoveOne, itemPrice }) => {
   return (
     <>
       <ul className="cartPageItems">
@@ -33,7 +30,7 @@ var CartPage = ({ items, onAddOne, onRemoveOne }) => {
         ))}
       </ul>
 
-      <div>Item Price Goes Here {price}</div>
+      <div>Total: ${itemPrice}</div>
     </>
   );
 };
