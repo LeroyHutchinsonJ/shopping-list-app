@@ -4,27 +4,37 @@ import PropTypes from "prop-types";
 import Item from "./item";
 
 var CartPage = ({ items, onAddOne, onRemoveOne }) => {
+  var priceAmount = items.reduce(() => {
+    return 0;
+  });
   return (
-    <ul className="cartPageItems">
-      {items.map(item => (
-        <li key={item.id} className="cartPageItem">
-          <Item item={item}>
-            <div className="cartItemControls">
-              <button
-                className="cartItemRemoveOne"
-                onClick={() => onRemoveOne(item)}
-              >
-                &ndash;
-              </button>
-              <span className="cartItemCount"> {item.count} </span>
-              <button className="cartItemAddOne" onClick={() => onAddOne(item)}>
-                +
-              </button>
-            </div>
-          </Item>
-        </li>
-      ))}
-    </ul>
+    <>
+      <ul className="cartPageItems">
+        {items.map(item => (
+          <li key={item.id} className="cartPageItem">
+            <Item item={item}>
+              <div className="cartItemControls">
+                <button
+                  className="cartItemRemoveOne"
+                  onClick={() => onRemoveOne(item)}
+                >
+                  &ndash;
+                </button>
+                <span className="cartItemCount"> {item.count} </span>
+                <button
+                  className="cartItemAddOne"
+                  onClick={() => onAddOne(item)}
+                >
+                  +
+                </button>
+              </div>
+            </Item>
+          </li>
+        ))}
+      </ul>
+
+      <div>Item Price Goes Here {price}</div>
+    </>
   );
 };
 
