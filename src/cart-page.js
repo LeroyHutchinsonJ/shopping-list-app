@@ -8,6 +8,9 @@ var CartPage = ({ items, onAddOne, onRemoveOne, itemPrice }) => {
   var showWordsTwo = "emptyCartTwo";
   var hideWords = "";
 
+  var hidePrice = "";
+  var total = "Total: $";
+
   return (
     <>
       <ul className="cartPageItems">
@@ -40,7 +43,10 @@ var CartPage = ({ items, onAddOne, onRemoveOne, itemPrice }) => {
         ))}
       </ul>
 
-      <div className="totalPrice">Total: ${itemPrice}</div>
+      <div className="totalPrice">
+        {items.length === 0 ? hidePrice : total}
+        {items.length === 0 ? hidePrice : itemPrice}
+      </div>
     </>
   );
 };
