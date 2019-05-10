@@ -4,9 +4,13 @@ import PropTypes from "prop-types";
 import Item from "./item";
 
 var CartPage = ({ items, onAddOne, onRemoveOne, itemPrice }) => {
+  var showWords = "emptyCart";
+  var hideWords = "";
+
   return (
     <>
       <ul className="cartPageItems">
+        <div className={items.length === 0 ? showWords : hideWords} />
         {items.map(item => (
           <li key={item.id} className="cartPageItem">
             <Item item={item}>

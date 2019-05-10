@@ -9,7 +9,7 @@ import CartPage from "./cart-page";
 
 class App extends React.Component {
   state = {
-    activeTab: 0,
+    activeTab: 1,
     cart: [],
     price: 0
   };

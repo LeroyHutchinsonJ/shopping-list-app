@@ -28,3 +28,7 @@
   left: 600px;
   padding: 20px;
 }
+.emptyCart::before {
+  content: "Your Cart is Empty";
+  font-size: 20px;
+}
