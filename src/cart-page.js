@@ -30,7 +30,7 @@ var CartPage = ({ items, onAddOne, onRemoveOne, itemPrice }) => {
         ))}
       </ul>
 
-      <div>Total: ${itemPrice}</div>
+      <div className="totalPrice">Total: ${itemPrice}</div>
     </>
   );
 };

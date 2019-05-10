@@ -22,3 +22,9 @@
 .cartItemRemoveOne {
   border-right: none;
 }
+.totalPrice {
+  font-size: 25px;
+  position: relative;
+  left: 600px;
+  padding: 20px;
+}
