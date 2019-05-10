@@ -1,6 +1,6 @@
 import React from "react";
 
-var Nav = ({ activeTab, onTabChange }) => {
+var Nav = ({ activeTab, onTabChange, itemsInCart, price }) => {
   return (
     <nav className="App-Nav">
       <ul>
@@ -16,6 +16,9 @@ var Nav = ({ activeTab, onTabChange }) => {
             </NavLink>
           </li>
         </b>
+        <span className="showCartItems">
+          {itemsInCart} Items (${price})
+        </span>
       </ul>{" "}
     </nav>
   );

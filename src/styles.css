@@ -32,3 +32,8 @@
 .App-Nav-Item.selected {
   border-bottom-color: #ffaa3f;
 }
+.showCartItems {
+  font-size: 20px;
+  position: relative;
+  left: 460px;
+}
