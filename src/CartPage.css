@@ -29,6 +29,20 @@
   padding: 20px;
 }
 .emptyCart::before {
-  content: "Your Cart is Empty";
-  font-size: 20px;
+  content: "Your Cart is Empty.";
+  font-size: 30px;
+  position: relative;
+  bottom: 30px;
+  left: 110px;
+  color: #ced6e0;
+}
+.emptyCartTwo::before {
+  content: "Why Not Add Some Expensive Products To It?";
+  font-size: 30px;
+  color: #ced6e0;
+}
+.addItemsPrompt {
+  position: fixed;
+  top: 180px;
+  left: 150px;
 }
