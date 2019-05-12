@@ -1,6 +1,11 @@
 import React from "react";
 
 var Nav = ({ activeTab, onTabChange, itemsInCart, price }) => {
+  //Gotta make it so when the active tab is cart or 1, then the item price shit doesnt show up
+  var showIndicator = `${itemsInCart} Items ($${price})`;
+  var dontShowIndicator = "";
+
+  var toShowOrNotToShow = activeTab === 0 ? showIndicator : dontShowIndicator;
   return (
     <nav className="App-Nav">
       <ul>
@@ -16,9 +21,7 @@ var Nav = ({ activeTab, onTabChange, itemsInCart, price }) => {
             </NavLink>
           </li>
         </b>
-        <span className="showCartItems">
-          {itemsInCart} Items (${price})
-        </span>
+        <span className="showCartItems">{toShowOrNotToShow}</span>
       </ul>{" "}
     </nav>
   );
