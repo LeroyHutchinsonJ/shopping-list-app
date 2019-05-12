@@ -6,7 +6,7 @@ const Item = ({ item, children }) => {
   return (
     <div className="item">
       <div className="itemLeft">
-        <div className="itemImage" />
+        <img className="itemImage" src={item.source} />
         <div className="itemTitle">{item.name}</div>
         <div className="itemDescription">{item.description}</div>
       </div>
