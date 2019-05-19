@@ -63,6 +63,7 @@ class App extends React.Component {
     );
   };
 
+  //Helps decide which page will be rendered
   renderContent() {
     switch (this.state.activeTab) {
       default:
