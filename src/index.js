@@ -13,7 +13,8 @@ class App extends React.Component {
     cart: [],
     price: 0
   };
-  //Function to handle the tab change
+
+//Function to handle the tab change
   handleTabChange = index => {
     this.setState({ activeTab: index });
   };
