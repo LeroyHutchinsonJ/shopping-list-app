@@ -16,6 +16,14 @@
   border: 1px solid #ccc;
   background: #fff;
 }
+.cartItemAddOne:hover {
+  background-color: #2ecc71;
+  cursor: pointer;
+}
+.cartItemRemoveOne:hover {
+  background-color: #e74c3c;
+  cursor: pointer;
+}
 .cartItemAddOne {
   border-left: none;
 }
